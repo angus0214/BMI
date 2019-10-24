@@ -1,0 +1,276 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.bmiCal {
+  padding: 74px 214px 74px 173px;
+  background-color: #424242;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo {
+  background-image: url(../img/BMICLogo.png);
+  background-position: center;
+  background-size: cover;
+  width: 117px;
+  height: 117px;
+  margin-right: 97px;
+}
+
+.dataInput {
+  margin-right: 53px;
+}
+
+.dataInput label {
+  display: block;
+  color: #FFD366;
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+
+.dataInput input[type="text"] {
+  background-color: rgba(255, 255, 255, 0.18);
+  border: 2px solid #FFD366;
+  border-radius: 10px;
+  font-size: 24px;
+  padding: 4px 10px;
+  width: 250px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.dataInput #height {
+  margin-bottom: 23px;
+}
+
+.result {
+  position: relative;
+}
+
+.btn_result {
+  background-color: #FFD366;
+  border: none;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  font-size: 24px;
+  border: 6px solid #FFD366;
+  cursor: pointer;
+}
+
+.btn_result .smallText {
+  font-size: 14px;
+  display: none;
+}
+
+.btn_result:hover {
+  -webkit-box-shadow: 0 1px 6px 3px rgba(255, 196, 50, 0.64);
+          box-shadow: 0 1px 6px 3px rgba(255, 196, 50, 0.64);
+}
+
+.btn_result:active {
+  background-color: #dea821;
+}
+
+.btn_result.underweight {
+  border-color: #31BAF9;
+  background-color: inherit;
+  color: #31BAF9;
+}
+
+.btn_result.normal {
+  border-color: #86D73F;
+  background-color: inherit;
+  color: #86D73F;
+}
+
+.btn_result.overweight {
+  border-color: #FF982D;
+  background-color: inherit;
+  color: #FF982D;
+}
+
+.btn_result.obese1 {
+  border-color: #FF6C03;
+  background-color: inherit;
+  color: #FF6C03;
+}
+
+.btn_result.obese2 {
+  border-color: #FF1200;
+  background-color: inherit;
+  color: #FF1200;
+}
+
+.largeText {
+  position: absolute;
+  right: -80px;
+  top: 42px;
+  font-size: 32px;
+  display: none;
+}
+
+.list {
+  padding: 48px 200px;
+  background-color: #dbdad5;
+}
+
+.list h3 {
+  text-align: center;
+}
+
+.bmiList {
+  margin-top: 36px;
+}
+
+.bmiList li {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.bmiList li #bmiColor {
+  position: absolute;
+  width: 12px;
+  height: 100%;
+}
+
+.bmiList li div {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  padding: 21px 5px 21px 17px;
+}
+
+.bmiList li div span {
+  font-size: 12px;
+}
+
+.bmiList li div p {
+  width: 80px;
+}
+
+.btn_redo {
+  background-image: url(../img/icons_loop.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius: 50%;
+  bottom: 40px;
+  right: 5px;
+  display: none;
+}
+
+.normal {
+  color: #86D73F;
+}
+
+.underweight {
+  color: #31BAF9;
+}
+
+.overweight {
+  color: #FF982D;
+}
+
+.obese1 {
+  color: #FF6C03;
+}
+
+.obese2 {
+  color: #FF1200;
+}
+
+.bg-normal {
+  background-color: #86D73F;
+}
+
+.bg-underweight {
+  background-color: #31BAF9;
+}
+
+.bg-overweight {
+  background-color: #FF982D;
+}
+
+.bg-obese1 {
+  background-color: #FF6C03;
+}
+
+.bg-obese2 {
+  background-color: #FF1200;
+}
+
+footer {
+  text-align: center;
+  padding: 37px 0;
+  background-color: #FFD366;
+  color: #424242;
+}
+/*# sourceMappingURL=all.css.map */

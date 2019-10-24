@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.bmiCal {
+  padding: 74px 214px 74px 173px;
+  background-color: #424242;
+  display: flex;
+}
+
+.logo {
+  background-image: url(../img/BMICLogo.png);
+  background-position: center;
+  background-size: cover;
+  width: 117px;
+  height: 117px;
+  margin-right: 97px;
+}
+
+.dataInput {
+  margin-right: 53px;
+
+  label {
+    display: block;
+    color: $primary;
+    font-size: 18px;
+    margin-bottom: 7px;
+  }
+
+  input[type="text"] {
+    background-color: rgba(255, 255, 255, 0.18);
+    border: 2px solid $primary;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 4px 10px;
+    width: 250px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  #height {
+    margin-bottom: 23px;
+  }
+}
+.result{
+  position: relative;
+}
+.btn_result {
+  background-color: $primary;
+  border: none;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  font-size: 24px;
+  border: 6px solid $primary;
+  cursor: pointer;
+
+  .smallText {
+    font-size: 14px;
+    display: none;
+  }
+
+  &:hover {
+    box-shadow: 0 1px 6px 3px rgba(255, 196, 50, 0.64);
+  }
+
+  &:active {
+    background-color: #dea821;
+  }
+
+  &.underweight {
+    border-color: $underweight;
+    background-color: inherit;
+    color: $underweight;
+  }
+
+  &.normal {
+    border-color: $normal;
+    background-color: inherit;
+    color: $normal;
+  }
+
+  &.overweight {
+    border-color: $overweight;
+    background-color: inherit;
+    color: $overweight;
+  }
+
+  &.obese1 {
+    border-color: $obese1;
+    background-color: inherit;
+    color: $obese1;
+  }
+
+  &.obese2 {
+    border-color: $obese2;
+    background-color: inherit;
+    color: $obese2;
+  }
+}
+.largeText{
+  position: absolute;
+  right: -80px;
+  top:42px;
+  font-size: 32px;
+  display: none;
+}
+.list {
+  padding: 48px 200px;
+  background-color: #dbdad5;
+
+  h3 {
+    text-align: center;
+  }
+}
+
+.bmiList {
+  margin-top: 36px;
+
+  li {
+    position: relative;
+    margin-bottom: 16px;
+
+    #bmiColor {
+      position: absolute;
+      width: 12px;
+      height: 100%;
+    }
+
+    div {
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 20px;
+      padding: 21px 5px 21px 17px;
+
+      span {
+        font-size: 12px;
+      }
+      p{
+        width:80px;
+      }
+    }
+
+  }
+}
+.btn_redo{
+  background-image: url(../img/icons_loop.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius: 50%;
+  bottom: 40px;
+  right: 5px;
+  display: none;
+
+}
+.normal {
+  color: $normal;
+}
+
+.underweight {
+  color: $underweight;
+}
+
+.overweight {
+  color: $overweight;
+}
+
+.obese1 {
+  color: $obese1;
+}
+
+.obese2 {
+  color: $obese2;
+}
+.bg-normal {
+  background-color: $normal;
+}
+
+.bg-underweight {
+  background-color: $underweight;
+}
+
+.bg-overweight {
+  background-color: $overweight;
+}
+
+.bg-obese1 {
+  background-color: $obese1;
+}
+
+.bg-obese2 {
+  background-color: $obese2;
+}
+
+footer{
+  text-align: center;
+  padding: 37px 0;
+  background-color: $primary;
+  color: #424242;
+}
